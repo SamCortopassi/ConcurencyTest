@@ -9,21 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var PrimeNumberButton: UIButton!
+    
+    @IBAction func CalculatePrimeNumbers(_ sender: Any) {
+        let queue = OperationQueue()
+        enablePrimeButton(false)
+        queue.addOperation {
+            for number in 0 ... 100_000 {
+                let isPrimeNumber = self.isPrime(number: number)
+                print("\(number) is prime: \(isPrimeNumber)")
+            }
+            OperationQueue.main.addOperation {
+                self.enablePrimeButton(true)
+            }
 
-    @IBAction func calculatePrimeNumber(_ sender: Any) {
-        for number in 0 ... 100_000_000 {
-            let isPrimeNumber = isPrime(number: number)
-            print("\(number) is prime: \(isPrimeNumber)")
         }
     }
-    
-    @IBOutlet weak var primeNumberButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+
     func isPrime(number: Int) -> Bool {
         if number <= 1 {
             return false
@@ -38,8 +44,17 @@ class ViewController: UIViewController {
             }
             i = i + 2
         }
-    return true
+        return true
     }
-
+    
+    func enablePrimeButton(_ isEnabled: Bool) {
+        PrimeNumberButton.isEnabled = isEnabled
+        if isEnabled {
+            PrimeNumberButton.setTitle("Calculate Prime Numbers", for: .normal)
+        } else {
+            PrimeNumberButton.setTitle("Calculating...", for: .normal)
+        }
+    }
+    
 }
 

@@ -28,7 +28,7 @@
                                 <rect key="frame" x="104" y="244" width="167" height="30"/>
                                 <state key="normal" title="Calculate Prime Number"/>
                                 <connections>
-                                    <action selector="calculatePrimeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vv9-9K-Gyb"/>
+                                    <action selector="CalculatePrimeNumbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTp-6f-Hpl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,8 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="CalculatePrimeNumber" destination="hVn-hN-xsR" id="RSQ-FQ-1Gc"/>
-                        <outlet property="primeNumberButton" destination="hVn-hN-xsR" id="pjj-uE-1sj"/>
+                        <outlet property="PrimeNumberButton" destination="hVn-hN-xsR" id="54A-P1-cdN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

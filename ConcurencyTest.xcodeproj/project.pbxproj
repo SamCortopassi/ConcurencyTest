@@ -12,6 +12,7 @@
 		66F27F76224BEE7E00160F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F27F74224BEE7E00160F37 /* Main.storyboard */; };
 		66F27F78224BEE8000160F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F27F77224BEE8000160F37 /* Assets.xcassets */; };
 		66F27F7B224BEE8000160F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F27F79224BEE8000160F37 /* LaunchScreen.storyboard */; };
+		66F27F85224C09CF00160F37 /* CalculatePrimeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F27F84224C09CF00160F37 /* CalculatePrimeOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		66F27F77224BEE8000160F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66F27F7A224BEE8000160F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66F27F7C224BEE8000160F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F27F84224C09CF00160F37 /* CalculatePrimeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePrimeOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				66F27F70224BEE7E00160F37 /* AppDelegate.swift */,
 				66F27F72224BEE7E00160F37 /* ViewController.swift */,
+				66F27F84224C09CF00160F37 /* CalculatePrimeOperation.swift */,
 				66F27F74224BEE7E00160F37 /* Main.storyboard */,
 				66F27F77224BEE8000160F37 /* Assets.xcassets */,
 				66F27F79224BEE8000160F37 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F27F73224BEE7E00160F37 /* ViewController.swift in Sources */,
+				66F27F85224C09CF00160F37 /* CalculatePrimeOperation.swift in Sources */,
 				66F27F71224BEE7E00160F37 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
